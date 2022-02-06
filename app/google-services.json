@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "927146429029",
+    "firebase_url": "https://plantsymbiosis-a0a22.firebaseio.com",
+    "project_id": "plantsymbiosis-a0a22",
+    "storage_bucket": "plantsymbiosis-a0a22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927146429029:android:5855b993f559ed1645948c",
+        "android_client_info": {
+          "package_name": "com.example.symbio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927146429029-irjqieuail1mbbqkg3r2od7knpi19696.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.symbio",
+            "certificate_hash": "3961941b4b7961b6fffa94bd5d9dc0456297bff5"
+          }
+        },
+        {
+          "client_id": "927146429029-ubo62n2mr7a5cvpr35u6778jvvtar4n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhhOFXbuyj6GJe9mtyn8rbxkm7ccSWq04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927146429029-ubo62n2mr7a5cvpr35u6778jvvtar4n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

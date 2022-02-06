@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">symbio</string>
+    <string name="tab_text_1">Insert Plant</string>
+    <string name="tab_text_2">Insert Symbiosis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_3">View Symbiosis</string>
+    <string name="tab_text_4">View Plants</string>
+    <string name="insert">Insert</string>
+    <string name="description">Description</string>
+    <string name="description1">Description: </string>
+    <string name="type_of_relation">Type of Relation</string>
+    <string name="select_a_plant">Select a Plant</string>
+    <string name="favourablelight">plant Light: </string>
+    <string name="soiltype">Soil Type: </string>
+    <string name="wateringcondition">Watering Condition: </string>
+    <string name="relationshipType">Relationship Type: </string>
+    <string name="maximumproduction">Maximum Production: </string>
+    <string name="name">Plant Name: </string>
+    <string name="todo">TODO</string>
+    <string name="plantName">Plant Name</string>
+
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+</resources>
