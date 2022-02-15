@@ -16,6 +16,7 @@ import android.view.View;
 
 
 import com.example.symbio.ui.main.SectionsPagerAdapter;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         tabs.setupWithViewPager(viewPager);
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
+
 
 
 

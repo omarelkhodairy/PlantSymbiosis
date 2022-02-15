@@ -40,13 +40,11 @@ public class RecordsFragment extends Fragment {
     View view;
     DatabaseReference reference;
     RecyclerView recyclerView;
-    //HashMap<String,String> list;
     ArrayList<Symbiosis> list;
-    //ArrayList<Symbiosis>list2;
+
 
     MyAdapter adapter;
-    MyAdapter adapter1;
-    Toolbar toolbar;
+
 
 
     @Override
@@ -56,7 +54,6 @@ public class RecordsFragment extends Fragment {
         recyclerView= (RecyclerView) view.findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
         list = new ArrayList<Symbiosis>();
-        //list2=new ArrayList<Symbiosis>();
         setHasOptionsMenu(true);
 
 

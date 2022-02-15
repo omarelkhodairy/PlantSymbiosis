@@ -23,6 +23,8 @@ public class InsertPlantFragment extends Fragment {
     EditText plantName, favourableLight, soilType, wateringCondition, maximumProduction, descriptionPlant;
     Plant plantObj= new Plant();
 
+
+
     @Override
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

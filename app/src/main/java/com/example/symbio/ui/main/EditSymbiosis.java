@@ -19,7 +19,7 @@ public class EditSymbiosis extends AppCompatActivity {
 
     FirebaseDatabase databaseinstance = FirebaseDatabase.getInstance();
 
-    DatabaseReference userNode = databaseinstance.getReference("plantApp");
+    DatabaseReference userNode = databaseinstance.getReference("plantApp").child("symbiosis");
     private EditText plantName1;
     private EditText plantName2;
     private EditText typeOfRelationship;
@@ -64,10 +64,10 @@ public class EditSymbiosis extends AppCompatActivity {
                 symbiosis.setDescription(description.getText().toString());
 
                 if(!plant1.equals(symbiosis.getPlant1()) || !plant2.equals(symbiosis.getPlant2())){
-                    userNode.child("symbiosis").child(plant1).child(plant2).setValue(null);
+                    userNode.child(plant1).child(plant2).setValue(null);
                 }
 
-                userNode.child("symbiosis").child(symbiosis.getPlant1()).child(symbiosis.getPlant2()).setValue(symbiosis).addOnSuccessListener(new OnSuccessListener<Void>() {
+                userNode.child(symbiosis.getPlant1()).child(symbiosis.getPlant2()).setValue(symbiosis).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(EditSymbiosis.this, "Symbiosis Updated Successfully ", Toast.LENGTH_LONG).show();
@@ -83,7 +83,7 @@ public class EditSymbiosis extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                userNode.child("symbiosis").child(plant1).setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
+                userNode.child(plant1).child(plant2).setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(EditSymbiosis.this, "Symbiosis record deleted ", Toast.LENGTH_LONG).show();

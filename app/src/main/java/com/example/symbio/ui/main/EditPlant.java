@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class EditPlant extends AppCompatActivity {
     FirebaseDatabase databaseinstance = FirebaseDatabase.getInstance();
 
-    DatabaseReference userNode = databaseinstance.getReference("plantApp");
+    DatabaseReference userNode = databaseinstance.getReference("plantApp").child("plants");
     private EditText plantName;
     private EditText favourableLight;
     private EditText soilType;
@@ -69,7 +69,7 @@ public class EditPlant extends AppCompatActivity {
                 plant.setMaxProduction(maxProduction.getText().toString());
                 plant.setDescription(description.getText().toString());
 
-                userNode.child("plants").child(plant.getName()).setValue(plant).addOnSuccessListener(new OnSuccessListener<Void>() {
+                userNode.child(plant.getName()).setValue(plant).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(EditPlant.this, "Plant Updated Successfully ", Toast.LENGTH_LONG).show();
@@ -85,7 +85,7 @@ public class EditPlant extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                userNode.child("plants").child(plant).setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
+                userNode.child(plant).setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(EditPlant.this, "Plant Deleted Successfully ", Toast.LENGTH_LONG).show();
